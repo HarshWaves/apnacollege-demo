@@ -1,0 +1,16 @@
+p {
+    color: red;
+    animation: zoozoo 2s ease-in 0s infinite alternate;
+    display: inline-block;
+}
+
+@keyframes zoozoo {
+    0% {
+        font-size: 1rem;
+        transform: rotateZ(0);
+    }
+    100% {
+        font-size: 4rem;
+        transform: rotateZ(360deg);
+    }
+}
