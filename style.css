@@ -1,16 +1,33 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color:aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: move-right 2s ease-in 2s infinite alternate;
+}
+
+@keyframes move-right {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translate(400px);
+    }
+}
+
 p {
-    color: red;
+    color: darkblue;
     animation: zoozoo 2s ease-in 0s infinite alternate;
-    display: inline-block;
 }
 
 @keyframes zoozoo {
     0% {
         font-size: 1rem;
-        transform: rotateZ(0);
     }
     100% {
-        font-size: 4rem;
-        transform: rotateZ(360deg);
+        font-size: 3rem;
     }
 }
+
